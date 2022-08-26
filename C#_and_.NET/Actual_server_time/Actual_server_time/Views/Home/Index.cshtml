@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-2">Welcome</h1>
+    <br />
+    <h2 class="display-4">Current date and time is : </h2>
+    <br />
+    @{ 
+        DateTime localDate = DateTime.Now;
+       <h3 class="display-5">@localDate</h3>
+    }
+
+    
+</div>

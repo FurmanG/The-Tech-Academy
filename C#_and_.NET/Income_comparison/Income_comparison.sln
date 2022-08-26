@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Income_comparison", "Income_comparison\Income_comparison.csproj", "{A3953352-58A9-4D01-AB8E-89CE622D59BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3953352-58A9-4D01-AB8E-89CE622D59BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3953352-58A9-4D01-AB8E-89CE622D59BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3953352-58A9-4D01-AB8E-89CE622D59BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3953352-58A9-4D01-AB8E-89CE622D59BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B518808-93BF-485C-9FA9-F3EDDBD3E54E}
+	EndGlobalSection
+EndGlobal

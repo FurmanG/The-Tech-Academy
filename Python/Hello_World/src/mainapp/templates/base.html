@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="bg_img">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin, latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/layout.css' %}">
+  </head>
+  <body>
+    <div class="page_container">
+      <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="{% url 'admin_console' %}">Contact</a></li>
+      </ul>
+      <header>
+        <h1>{% block header %}{% endblock %}</h1>
+      </header>
+      {% block content %}{% endblock %}
+    </div>
+  </body>
+</html>
+
+
+
+
+
