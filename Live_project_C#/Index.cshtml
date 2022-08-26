@@ -1,0 +1,58 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IPagedList<TheatreCMS3.Areas.Prod.Models.Production>
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<div class="col-md-offset-2 col-md-10">
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn production-create--back_to_list" })
+</div>
+
+@* The user should be able to search for productions by title.
+    Add a search bar at the top of the page and implement the search feature.*@
+@using (Html.BeginForm("Index", "Productions", FormMethod.Get))
+{
+    <p>
+        Find by title: @Html.TextBox("searchString", "Title", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
+@* Add paging to the index page. *@
+@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+
+
+<div class="Production-index--container">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("Details", "Productions", new { id = item.ProductionId })">
+            <div class="card bg-dark text-white Production-index--Card">
+                <div class="card-img">
+                    <a href="@Url.Action("Details", "Productions", new { id = item.ProductionId })">
+                        <img src="~/Content/images/DollsHouse.png" alt="DollsHouse-image" class="production-index--iamge" />
+                    </a>
+                </div>
+                <div class="production-index--image_overlay">
+                    <div class="badge badge-pill">
+                        <span class="badge badge-pill badge-light">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ProductionId })
+                        </span>
+                    </div>
+                    <div class="badge badge-pill">
+                        <span class="badge badge-pill badge-light">
+                            @Html.ActionLink("Delete", "Delete", new { id = item.ProductionId })
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    }
+</div>
+
