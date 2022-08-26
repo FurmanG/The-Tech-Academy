@@ -1,0 +1,85 @@
+/*  PIZZA MENU  */ 
+/* A background color to the <body> element. */
+body {
+  background-color: rgb(6, 77, 47);
+}
+
+/*  A font family to all <h1> elements.
+    A color to all <h1> elements.  */
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(195, 195, 215);
+  text-align: center;
+}
+
+/*  A font family to all <h3> elements. 
+    Assign a color to all <h3> elements. */ 
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(155, 193, 227);
+}
+
+/*  A font family to all <div> elements 
+    A color to all <div> elements.*/
+div{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(174, 199, 176);
+}
+
+#menuBG {
+  width: 400px;
+  height: 470px;
+  margin: 10px auto;
+}
+
+#frmMenu {
+  width: 600px;
+  height: 200px;
+}
+
+#totalPrice {
+  width: 200px;
+  height: 190px;
+  margin: 20px auto;
+  float: right;
+}
+
+.left {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.center {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+.right {
+  width: 200px;
+  height: 200px;
+  float: right;
+}
+
+#showText {
+  width: 200px;
+  height: 190px;
+  margin: 0px auto;
+  float: left;
+}
+
+#cart {
+  top:0;margin: 0px auto;
+  width: 400px;
+  height: 200px;
+}
+
+#btnOrder {
+  margin: 10px 0px 0px 100px;
+  width: 100px;
+  height: 40px;
+  display: block;
+  margin: 25px auto;
+}
+
